@@ -16,7 +16,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'c-primary': '#F85559',
+                'c-secondary': '#121212',
               }
             }
           }
@@ -25,6 +26,7 @@
     <style>
         body {
             font-family: 'Lato', sans-serif;
+            color: rgba(18, 18, 18, 0.60);
         }
     </style>
 </head>
@@ -32,61 +34,55 @@
     <header class="px-4">
         <!-- Navigation Section -->
         <nav>
-            <div class="navbar max-w-screen-xl mx-auto">
-                <div class="navbar-start">
+            <div class="navbar max-w-screen-xl md:bg-c-primary rounded-full md:px-8 py-6 text-c-secondary md:text-white flex-row-reverse md:flex-row justify-between md:justify-normal mx-auto">
+                <div class="navbar-start justify-end md:justify-normal">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <div class="hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#">All Fruits</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0 md:left-0 text-c-secondary">
                             <li>
-                                <a>Item 1</a>
+                                <a href="#">Home</a>
                             </li>
                             <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li>
-                                        <a>Submenu 1</a>
-                                    </li>
-                                    <li>
-                                        <a>Submenu 2</a>
-                                    </li>
-                                </ul>
+                                <a href="#">About Us</a>
                             </li>
                             <li>
-                                <a>Item 3</a>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">All Fruits</a>
                             </li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li>
-                            <a>Item 1</a>
-                        </li>
-                        <li tabindex="0">
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li>
-                                        <a>Submenu 1</a>
-                                    </li>
-                                    <li>
-                                        <a>Submenu 2</a>
-                                    </li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <a>Item 3</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <a class="btn">Button</a>
+                <a class="navbar-center normal-case flex items-center gap-2">
+                    <img class="h-10" src="images/logo.png" alt="">
+                    <h3 class="text-3xl font-bold">Fruit Burst</h3>
+                </a>
+                <div class="navbar-end hidden md:inline-flex ps-5">
+                    <form class="flex bg-white px-4 rounded-full">
+                        <input class="input input-bordered w-full max-w-xs border-0 text-c-secondary focus:outline-0" id="search" type="text" placeholder="Search here">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass text-c-secondary"></i></button>
+                    </form>
                 </div>
             </div>
         </nav>
