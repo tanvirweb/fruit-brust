@@ -19,6 +19,12 @@
                 'c-primary': '#F85559',
                 'c-secondary': '#121212',
               }
+            },
+            backgroundImage: {
+                'banner-1': "url('images/banner1.png')",
+                'banner-2': "url('images/banner2.png')",
+                'banner-3': "url('images/banner3.png')",
+                'banner-4': "url('images/banner4.png')",
             }
           }
         }
@@ -33,7 +39,7 @@
 <body>
     <header class="px-4">
         <!-- Navigation Section -->
-        <nav>
+        <nav class="md:pb-10">
             <div class="navbar max-w-screen-xl md:bg-c-primary rounded-full md:px-8 py-6 text-c-secondary md:text-white flex-row-reverse md:flex-row justify-between md:justify-normal mx-auto">
                 <div class="navbar-start justify-end md:justify-normal">
                     <div class="dropdown">
@@ -86,6 +92,83 @@
                 </div>
             </div>
         </nav>
+        <!-- Banner Section -->
+        <div class="max-w-screen-xl mx-auto">
+            <div class="carousel w-full h-[35vh] md:h-[100vh] rounded-lg">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero bg-banner-1">
+                        <div class="hero-overlay bg-black bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:self-start">
+                            <div class="max-w-xl md:pt-20">
+                                <h1 class="mb-5 text-3xl md:text-6xl font-extrabold text-white">Exotic tastes at your<br> doorstep</h1>
+                                <p class="mb-5 px-10 text-lg">We supply highly quality organic products</p>
+                                <a href="#" class="btn bg-c-primary text-white border-0 hover:text-c-primary text-lg normal-case">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero bg-banner-2">
+                        <div class="hero-overlay bg-black bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:self-start">
+                            <div class="max-w-xl md:pt-20">
+                                <h1 class="mb-5 text-3xl md:text-6xl font-extrabold text-white">Exotic tastes at your<br> doorstep</h1>
+                                <p class="mb-5 px-10 text-lg">We supply highly quality organic products</p>
+                                <a href="#" class="btn bg-c-primary text-white border-0 hover:text-c-primary text-lg normal-case">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero bg-banner-3">
+                        <div class="hero-overlay bg-black bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:self-start">
+                            <div class="max-w-xl md:pt-20">
+                                <h1 class="mb-5 text-3xl md:text-6xl font-extrabold text-white">Exotic tastes at your<br> doorstep</h1>
+                                <p class="mb-5 px-10 text-lg">We supply highly quality organic products</p>
+                                <a href="#" class="btn bg-c-primary text-white border-0 hover:text-c-primary text-lg normal-case">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero bg-banner-4">
+                        <div class="hero-overlay bg-black bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:self-start">
+                            <div class="max-w-xl md:pt-20">
+                                <h1 class="mb-5 text-3xl md:text-6xl font-extrabold text-white">Exotic tastes at your<br> doorstep</h1>
+                                <p class="mb-5 px-10 text-lg">We supply highly quality organic products</p>
+                                <a href="#" class="btn bg-c-primary text-white border-0 hover:text-c-primary text-lg normal-case">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+    <main class="px-4">
+        <!-- Fruits Section -->
+        <section>
+            <div class="max-w-screen-lg mx-auto">
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
